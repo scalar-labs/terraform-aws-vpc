@@ -24,37 +24,37 @@ variable "enable_ipv6" {
 
 variable "private_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 private subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
 variable "public_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 public subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
 variable "database_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 database subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
 variable "redshift_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 redshift subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
 variable "elasticache_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 elasticache subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
 variable "intra_subnet_ipv6_prefixes" {
   description = "Assigns IPv6 intra subnet id based on the Amazon provided /56 prefix base 10 integer (0-256). Must be of equal length to the corresponding IPv4 subnet list"
-  type        = list
+  type        = list(string)
   default     = []
 }
 
